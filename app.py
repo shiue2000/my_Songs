@@ -109,6 +109,6 @@ def run_service():
 # ... [Other routes like /download] ...
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 8000))
+    port = int(os.getenv('PORT', 5000))
     logger.info(f"Flask app running on port {port}, saving files to {OUTPUT_FOLDER}")
     app.run(host='0.0.0.0', port=port, debug=False)
