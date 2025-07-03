@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  youtube_downloader:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./output:/app/output
+      - ./users.json:/app/users.json  # Optional: persist users.json across container restarts
+    environment:
+      - FLASK_SECRET_KEY=146e321c7dead66979bd65744c37aa911a24aa168898720164b07441cb88b4f9
+    restart: unless-stopped

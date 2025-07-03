@@ -1,7 +1,3 @@
 Flask
-yt_dlp
-pydub
+yt-dlp
 python-dotenv
-gunicorn
-flask_cors
-flask_ngrok
