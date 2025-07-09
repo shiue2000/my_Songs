@@ -9,5 +9,5 @@ services:
       - ./output:/app/output
       - ./users.json:/app/users.json  # Optional: persist users.json across container restarts
     environment:
-      - FLASK_SECRET_KEY=146e321c7dead66979bd65744c37aa911a24aa168898720164b07441cb88b4f9
+      - FLASK_SECRET_KEY=xxxxx
     restart: unless-stopped
